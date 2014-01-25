@@ -1,3 +1,4 @@
+@import "bootstrap";
 @import "mixins";
 @import "fontello";
 
@@ -20,7 +21,16 @@ body {
 }
 
 a {
+  text-decoration: none;
+  color: $blue;
+
   transition: all .3s;
+
+  &:hover {
+    text-decoration: none;
+    border-color: $blue;
+    color: darken($blue, 10%);
+  }
 }
 
 .twitter-timeline {
@@ -32,15 +42,8 @@ a {
   display: block;
   text-align: center;
   vertical-align: middle;
-  border: 1px solid lighten(rgb(31, 31, 31), 10%);
+  border: 1px solid lighten(rgb(26, 26, 26), 10%);
   height: 268px;
-  color: $blue;
-
-  &:hover {
-    text-decoration: none;
-    border-color: $blue;
-    color: darken($blue, 10%);
-  }
 
   h2 {
     margin-top: 100px;
@@ -80,7 +83,7 @@ a {
   margin: 1em 0;
 
   &:hover {
-    background: transparent;
+    background: rgb(26, 26, 26);
     border-color: $blue;
     color: rgb(85, 164, 242);
   }
