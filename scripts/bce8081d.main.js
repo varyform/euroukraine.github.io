@@ -1,1 +1,0 @@
-"use strict";$(".card").click(function(a){a.preventDefault();var b=$(this),c=b.data("url");b.replaceWith('<iframe src="'+c+'" class="col-sm-4 card" frameborder="0" scrolling="no" allowfullscreen></iframe>')});
