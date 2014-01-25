@@ -1,0 +1,10 @@
+{
+  "name": "onlinemaidan",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.0.3",
+    "jquery": "",
+    "font-awesome": ""
+  },
+  "devDependencies": {}
+}
