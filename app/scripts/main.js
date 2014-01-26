@@ -31,14 +31,13 @@ var replaceTargetWith = function( targetID, html ) {
 };
 
 // Handler
-var elements = document.getElementsByClassName( 'card' );
+var els = document.getElementsByClassName( 'card' );
 
-for( var i = 0; i < elements.length; i++ ) {
-    elements[ i ].onclick = function( e ) {
+for( var i = 0; i < els.length; i++ ) {
+    els[ i ].onclick = function( e ) {
         e.preventDefault();
-        var $this = this;
-        var url = $this.getAttribute( 'data-url' );
+        var url = this.getAttribute( 'data-url' );
 
-        replaceTargetWith( $this.id, '<iframe src="' + url + '" class="col-sm-4 card" frameborder="0" scrolling="no" allowfullscreen></iframe>' );
+        replaceTargetWith( this.id, '<iframe src="' + url + '" class="col-sm-4 card" frameborder="0" scrolling="no" allowfullscreen></iframe>' );
     };
 }
